@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this survey form with the required information</p>
+    <form id="survey-form" method="post" action='https://becomeabodybuilder.com'>
+      <fieldset>
+        <label for="name" id="name-label">Name: <input id="name" name="name-label" type="text" required placeholder="Enter your name" /></label><br>
+        <br>
+        <label for="email" id="email-label">Email: <input id="email" name="email-label" type="email" required placeholder="Enter your Email" /></label><br>
+        <br>
+        <label for="number" id="number-label">Age (optional) : <input id="number" name="number-label" type="number" min="10" max="99" placeholder="Age" /></label><br>
+        <br>
+        <label for="dropdown">Which option best describes your current fitness situation? <select id="dropdown" name="dropdown">
+          <option value="">Select current fitness situation</option>
+          <option value="">Bodybuilder</option>
+          <option value="">Fitness Influencer</option>
+          <option value="">Other</option>
+        </select></label>
+
+        <p id="description">Would you recommend bodybuilding to a friend?</p>
+        <label for="definitely"><input type="radio" id="definitely" name="recommend" class="inline" value="definitely" />Definitely</label><br>
+        <label for="maybe"><input type="radio" id="maybe" name="recommend" class="inline" value="maybe" />Maybe</label><br>
+        <label for="not-sure"><input type="radio" id="not-sure" name="recommend" class="inline" value="not-sure" />Not sure</label><br>   
+        <br><label for="bio">Tell us about your daily fitness routine: <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Type your routine here"></textarea></label><br>
+        <p id="exercise-types">Which of the following exercises have you done before? <span class="exercises"> (Check all that apply)</span></p>
+        <label for="squats" class="exercises"><input type="checkbox" id="squats" class="inline" value="squats" />Squats</label><br>
+        <label for="deadlifts" class="exercises"><input type="checkbox" id="deadlifts" class="inline" value="deadlifts" />Deadlifts</label><br>
+        <label for="benchpress" class="exercises"><input type="checkbox" id="benchpress" class="inline" value="benchpress" />Benchpress</label><br>
+        <label for="pull-ups" class="exercises"><input type="checkbox" id="pull-ups" class="inline" value="pull-ups" />Pull-ups</label><br>
+        <label for="push-ups" class="exercises"><input type="checkbox" id="push-ups" class="inline" value="push-ups" />Push-ups</label><br>
+        <label for="dips" class="exercises"><input type="checkbox" id="dips" class="inline" value="dips" />Dips</label>
+        <br>
+        <br><label for="bio">Do you have any health problems we should know about? <textarea id="bio" name="bio" rows="3" cols="30" placeholder="List health concerns here"></textarea></label><br>
+        
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
